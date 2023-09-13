@@ -1,6 +1,13 @@
 <template>
     <div>
-        <v-app-bar app height="100px" elevation="5">I am desktop bar</v-app-bar>
+        <v-app-bar app height="auto" >
+            <v-row>
+                <v-col>
+                    <img width="100px" position="center center" :src="require('/assets/images/logo/logo.png')"/>
+
+                </v-col>
+            </v-row>
+        </v-app-bar>
     </div>
 </template>
 
