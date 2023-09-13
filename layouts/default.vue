@@ -1,19 +1,14 @@
 <template>
-  <v-app  >
-    
-
+  <v-app dark >
+    <nav-bar></nav-bar>
     <v-main>
-      <Nuxt/>
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

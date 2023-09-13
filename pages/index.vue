@@ -1,5 +1,5 @@
 <template>
-  <div>this is the homepage</div>
+  <div>this is the homepage and screen width is {{ $mq }}</div>
 </template>
 
 <script>
