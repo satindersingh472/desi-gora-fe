@@ -1,9 +1,9 @@
 <template>
     <div>
-        <mobile-navbar
+        <mobile-nav-bar
       v-if="$mq === 'mobile' || $mq === 'tablet' || $mq === 'laptop'"
-    ></mobile-navbar>
-    <desktop-navbar v-if="$mq === 'desktop'"></desktop-navbar>
+    ></mobile-nav-bar>
+    <desktop-nav-bar v-if="$mq === 'desktop'"></desktop-nav-bar>
         
     </div>
 </template>
