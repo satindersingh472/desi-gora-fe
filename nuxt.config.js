@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - desi-gora-fe',
-    title: 'desi-gora-fe',
+    titleTemplate: 'Desi Gora - %s',
+    title: 'Desi Gora',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
