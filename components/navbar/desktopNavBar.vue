@@ -1,17 +1,19 @@
 <template>
   <div>
-    <v-app-bar app height="auto" class="white" flat >
+    <v-app-bar app height="150px" class="white" flat>
       <v-row>
         <v-col>
-          <p class="mx-3 pa-2">
-            <span class="blue--text text--darken-4 text-h1 font-weight-bold mnr-3 "
-              >D</span
-            >
-            <span class="font-weight-regular text-h1"  >/</span>
-            <span class="deep-orange--text text-h1 font-weight-bold"
-              >G</span
-            >
-          </p>
+          <v-img
+            :src="require('/assets/images/logo/logo.png')"
+            width="100px"
+            height="100px"
+          ></v-img>
+        </v-col>
+        <v-col>
+            
+          <v-row>
+         <v-col v-for="(link,index) in links" :key="index" >{{ link['to'] }}</v-col>  
+        </v-row>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -19,7 +21,23 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      links: [
+        {
+          to: 'Home',
+        },
+        {
+          to: 'Contact',
+        },
+        {
+          to: 'About',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
