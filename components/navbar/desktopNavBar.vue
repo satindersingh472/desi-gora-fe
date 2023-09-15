@@ -9,9 +9,9 @@
             height="100px"
           ></v-img>
         </v-col>
-        <v-col>
+        <v-col align-self="center" >
             
-          <v-row>
+          <v-row >
          <v-col v-for="(link,index) in links" :key="index" >{{ link['to'] }}</v-col>  
         </v-row>
         </v-col>

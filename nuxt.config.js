@@ -4,6 +4,13 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+
+  server:{
+    host:'0.0.0.0',
+    port:3000,
+    timing:false
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -22,6 +29,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
+  scss:[
+    '@/scss/global.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
